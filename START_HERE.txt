@@ -1,0 +1,10 @@
+BUS DRIVER PLAYLIST - AUTO MUSIC VERSION
+
+1. This folder needs Python 3 installed.
+2. Put your MP3/audio files inside the "music" folder.
+3. Double-click START_SERVER.bat.
+4. Open http://localhost:8000 in Chrome.
+5. Every audio file in music/ automatically appears in the playlist.
+6. Add/remove songs from music/ and refresh the browser.
+
+Only use audio you have permission to host/play.

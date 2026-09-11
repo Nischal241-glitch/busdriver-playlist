@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BUS DRIVER • NH 48</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="rain"></div>
+  <header>
+    <div class="brand">
+      <div class="bus-icon">🚌</div>
+      <div>
+        <div class="brand-name">BUS DRIVER</div>
+        <div class="route">NH 48 · DELHI – MUMBAI</div>
+      </div>
+    </div>
+    <div class="clock" id="clock">00:00</div>
+  </header>
+
+  <main>
+    <div class="tracks-count" id="tracksCount">0 TRACKS · NON-STOP</div>
+
+    <section class="hero">
+      <div class="road-lights"></div>
+      <div class="mountain mountain-a"></div>
+      <div class="mountain mountain-b"></div>
+      <div class="bus-art">
+        <div class="bus-body">
+          <div class="bus-window-row">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="bus-stripe"></div>
+          <div class="bus-lower"></div>
+          <div class="wheel wheel-a"></div>
+          <div class="wheel wheel-b"></div>
+        </div>
+      </div>
+      <div class="hero-title">BUS DRIVER</div>
+      <div class="hero-subtitle">ALL NIGHT ON NH 48</div>
+    </section>
+
+    <button class="playlist-pill" id="playlistBtn">☰ &nbsp; OPEN PLAYLIST</button>
+
+    <section class="player">
+      <div class="cover" id="cover">🎵</div>
+      <div class="song-info">
+        <div class="song-title" id="songTitle">SELECT A SONG</div>
+        <div class="artist" id="artist">Your playlist is empty</div>
+        <div class="progress-row">
+          <span id="currentTime">0:00</span>
+          <input id="progress" type="range" min="0" max="100" value="0">
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="prevBtn" title="Previous">|◀</button>
+        <button class="play-btn" id="playBtn" title="Play/Pause">▶</button>
+        <button id="nextBtn" title="Next">▶|</button>
+        <button id="muteBtn" title="Mute">🔊</button>
+        <button id="shuffleBtn" title="Shuffle">🔀</button>
+        <button id="repeatBtn" title="Repeat">🔁</button>
+      </div>
+    </section>
+
+    <div class="shortcuts">
+      <span><kbd>Space</kbd> PLAY / PAUSE</span>
+      <span><kbd>←</kbd><kbd>→</kbd> SEEK</span>
+      <span><kbd>N</kbd><kbd>P</kbd> TRACK</span>
+      <span><kbd>Q</kbd> QUEUE</span>
+    </div>
+
+    <section class="playlist" id="playlist">
+      <div class="playlist-head">
+        <h2>🎵 Bus Driver Playlist</h2>
+        <label class="add-btn">
+          + ADD SONGS
+          <input id="fileInput" type="file" accept="audio/*" multiple hidden>
+        </label>
+      </div>
+      <div id="songList" class="song-list">
+        <div class="empty">Put MP3 files in the music folder or click “ADD SONGS”.</div>
+      </div>
+    </section>
+  </main>
+
+  <audio id="audio"></audio>
+  <script src="app.js"></script>
+</body>
+</html>
